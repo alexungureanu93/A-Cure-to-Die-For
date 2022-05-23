@@ -17,6 +17,7 @@ public class NewPlayer : PhysicsObject
     [SerializeField] private GameObject attackBox;
     [SerializeField] private int attackPower;
 
+    public List<Sprite> playerForms = new List<Sprite>();
     public List<Sprite> inventoryItems = new List<Sprite>();
     public Image inventoryDisplayed;
     private Vector2 healthBarOriginalSize;
@@ -71,6 +72,11 @@ public class NewPlayer : PhysicsObject
         {
             StartCoroutine(ActivateAttack());
         }
+        if (Input.GetButtonDown("Fire3"))
+        {
+            SwitchForm();
+        }
+
         Die();
     }
 
@@ -109,6 +115,26 @@ public class NewPlayer : PhysicsObject
             inventoryDisplayed.sprite = inventoryItems[0];
         }
 
+    }
+
+    //Switch between living form and ghost form
+    private void SwitchForm() 
+    {
+        //switch to GhostForm
+        if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "Player") 
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerForms[1];
+            verticalSpeed = verticalSpeed * 2;
+            return;
+        }
+
+        //Switch to living form
+        if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "PlayerGhost")
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerForms[0];
+            verticalSpeed = verticalSpeed / 2;
+            return;
+        }
     }
 
     private void SwitchInventory()
