@@ -23,6 +23,7 @@ public class NewPlayer : PhysicsObject
     private Vector2 healthBarOriginalSize;
     private int inventoryCounter = 0;
     private int maxHealth = 100;
+    public bool isInAreaToSwitch { get; set; }
 
 
     //singleton instantiation 
@@ -120,23 +121,39 @@ public class NewPlayer : PhysicsObject
     //Switch between living form and ghost form
     private void SwitchForm() 
     {
-        //switch to GhostForm
-        if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "Player") 
+        if (isInAreaToSwitch)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = playerForms[1];
-            verticalSpeed = verticalSpeed * 2;
+            ////switch to GhostForm
+            if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "Player")
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = playerForms[1];
+                verticalSpeed = verticalSpeed * 2;
+                StartCoroutine(StopForm());
+                return;
+            }
+
+            ////Switch to living form
+            if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "PlayerGhost")
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = playerForms[0];
+                verticalSpeed = verticalSpeed / 2;
+                StartCoroutine(StopForm());
+                return;
+            }
+        }
+        else 
+        {
             return;
         }
 
-        //Switch to living form
-        if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "PlayerGhost")
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = playerForms[0];
-            verticalSpeed = verticalSpeed / 2;
-            return;
-        }
     }
 
+    // will disable transformation
+    IEnumerator StopForm() 
+    {
+        isInAreaToSwitch = false;
+        yield return new WaitForSeconds(2);
+    }
     private void SwitchInventory()
     {
  
