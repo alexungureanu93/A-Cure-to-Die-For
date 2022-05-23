@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7049782630072490708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7049782630072490730}
+  - component: {fileID: 7049782630072490731}
+  m_Layer: 2
+  m_Name: PolygonCameraCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7049782630072490730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049782630072490708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.323448, y: 23.455761, z: -5.9372716}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &7049782630072490731
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049782630072490708}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 59.708504, y: -25.89553}
+      - {x: 110.353424, y: -26.339247}
+      - {x: 109.82128, y: 7.4256105}
+      - {x: 61.707726, y: 6.222088}
+      - {x: 61.31248, y: 6.19615}
+      - {x: 60.600506, y: 6.1494255}
+      - {x: 42.968204, y: 4.9922943}
+      - {x: -10.803045, y: 4.4555035}
+      - {x: -10.891653, y: -10.284159}
+      - {x: -10.877644, y: -15.35375}
+      - {x: -11.406813, y: -17.12943}
+      - {x: -10.485145, y: -18.748043}
+      - {x: -10.867775, y: -20.95181}
+      - {x: -1.0085678, y: -20.84259}
+      - {x: 40.05425, y: -21.222822}
+      - {x: 42.107597, y: -19.373785}
+      - {x: 46.68719, y: -19.204958}
+      - {x: 46.96119, y: -20.807854}
+      - {x: 51.28134, y: -20.417574}
+      - {x: 52.078026, y: -21.872717}
+      - {x: 54.980152, y: -22.01063}
+      - {x: 59.10039, y: -25.452513}
