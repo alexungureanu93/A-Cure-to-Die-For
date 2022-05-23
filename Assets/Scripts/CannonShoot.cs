@@ -8,6 +8,8 @@ public class CannonShoot : MonoBehaviour
     public GameObject bulletprefab;
     public float timetoshoot = 2.00f;
     public float nextshoot = 3.00f;
+    public float range = 8.0f;
+    public float killrange = 1.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class CannonShoot : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(Vector2.Distance(NewPlayer.Instance.transform.position,this.transform.position) <=1.5f)
+        if(Vector2.Distance(NewPlayer.Instance.transform.position,this.transform.position) <=killrange)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
                 Destroy(this.gameObject);
@@ -26,9 +28,10 @@ public class CannonShoot : MonoBehaviour
     }
 
     void Shoot()
-    {
+    {   
+        
 
-        if (Vector2.Distance(NewPlayer.Instance.transform.position, this.transform.position) <= 8.00f)
+       if (Vector2.Distance(NewPlayer.Instance.transform.position, this.transform.position) <= range)
         {
             GameObject bullet = Instantiate(bulletprefab, shootpos.position, bulletprefab.transform.rotation);
 
