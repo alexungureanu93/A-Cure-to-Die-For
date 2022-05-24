@@ -24,5 +24,8 @@ public class AttackBox : MonoBehaviour
         {
             collision.gameObject.GetComponent<Enemy>().Health -= weaponDamage + NewPlayer.Instance.AttackPower ;
         }
+        //Destroy the gameobjects with tag enemy if the attackbox hit them
+        if (collision.gameObject.CompareTag("Enemy"))
+            Destroy(collision.gameObject);
     }
 }

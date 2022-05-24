@@ -80,12 +80,14 @@ public class NewPlayer : PhysicsObject
         {
             Destroy(gameObject);
             SceneManager.LoadScene("Level1");
+            
         }
     }
     private IEnumerator ActivateAttack()
     {
         attackBox.SetActive(true);
         yield return new WaitForSeconds(attackDuration);
+       
         attackBox.SetActive(false);
     }
 
