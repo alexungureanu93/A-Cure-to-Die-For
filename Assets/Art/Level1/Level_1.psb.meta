@@ -123,7 +123,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 3852
-      y: 312
+      y: 158
       width: 66
       height: 104
     spriteID: 04b9aae88d285db4194e1fb46582c9a0
@@ -135,7 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1588, y: -995}
+    uvTransform: {x: 1588, y: -1149}
   - name: GJ_Gem
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -144,7 +144,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 3852
-      y: 606
+      y: 452
       width: 36
       height: 37
     spriteID: f27c97b921737c440bc357a0594cc5e1
@@ -156,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1774, y: -917}
+    uvTransform: {x: 1774, y: -1071}
   - name: Coin
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -165,7 +165,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 3852
-      y: 537
+      y: 383
       width: 58
       height: 61
     spriteID: a395a4c4b192b0845a23002423f94daa
@@ -177,28 +177,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3326, y: -1306}
-  - name: PlayerGhost
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3852
-      y: 4
-      width: 68
-      height: 146
-    spriteID: 98a1e31b9a616c943a56c60c6a84dc3c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2278, y: -1303}
+    uvTransform: {x: 3326, y: -1460}
   - name: Player
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -207,7 +186,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 3852
-      y: 158
+      y: 4
       width: 68
       height: 146
     spriteID: ed154fed38e391e40ada7afd6c44acd0
@@ -219,7 +198,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1966, y: -1149}
+    uvTransform: {x: 1966, y: -1303}
   - name: Ground1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -249,7 +228,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 3852
-      y: 424
+      y: 270
       width: 38
       height: 105
     spriteID: 5cbfce6d552bc8745ac4de3eacd2b652
@@ -261,7 +240,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1567, y: -667}
+    uvTransform: {x: 1567, y: -821}
   - name: BackgroundLayerRef
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -329,7 +308,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 04b9aae88d285db4194e1fb46582c9a0
     layerID: 13
-    mosaicPosition: {x: 3852, y: 312}
+    mosaicPosition: {x: 3852, y: 158}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -339,7 +318,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: f27c97b921737c440bc357a0594cc5e1
     layerID: 10
-    mosaicPosition: {x: 3852, y: 606}
+    mosaicPosition: {x: 3852, y: 452}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -349,17 +328,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: a395a4c4b192b0845a23002423f94daa
     layerID: 9
-    mosaicPosition: {x: 3852, y: 537}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: PlayerGhost
-    spriteName: PlayerGhost
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 98a1e31b9a616c943a56c60c6a84dc3c
-    layerID: 15
-    mosaicPosition: {x: 3852, y: 4}
+    mosaicPosition: {x: 3852, y: 383}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -369,7 +338,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: ed154fed38e391e40ada7afd6c44acd0
     layerID: 7
-    mosaicPosition: {x: 3852, y: 158}
+    mosaicPosition: {x: 3852, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -389,7 +358,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 5cbfce6d552bc8745ac4de3eacd2b652
     layerID: 14
-    mosaicPosition: {x: 3852, y: 424}
+    mosaicPosition: {x: 3852, y: 270}
     flatten: 0
     isImported: 1
     isVisible: 1
