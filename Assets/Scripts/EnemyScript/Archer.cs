@@ -9,17 +9,16 @@ public class Archer : MonoBehaviour
     public GameObject target;
     public GameObject archerbase;
     public float speed = 20.0f;
-    public float turnspeed = 2f;
     private bool canshootagain = true;
-    private float killrange = 1.5f;
-
+    public float archerRange = 10.00f;
+    public float angleaccuracy = 30.00f;
+   
     
 
     // Update is called once per frame
     void LateUpdate()
     {
-        
-        
+            
 
 
 
@@ -29,11 +28,11 @@ public class Archer : MonoBehaviour
             Vector2 direction = (target.transform.position - archerbase.transform.position).normalized;
 
             //Check if the player is in the shooting range of the archer
-            if (Vector2.Distance(target.transform.position, archerbase.transform.position) <= 10.00f)
+            if (Vector2.Distance(target.transform.position, archerbase.transform.position) <= archerRange)
             {
 
                 float? angle = RotateBow();
-                if (canshootagain && angle != null && Vector3.Angle(direction, archerbase.transform.position) > 30f)
+                if (canshootagain && angle != null && Vector3.Angle(direction, archerbase.transform.position) > angleaccuracy)
                     Shoot();
             }
               

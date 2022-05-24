@@ -6,7 +6,6 @@ public class Arrow : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float speed = 2.50f;
     private float lifetime = 3.00f;
     public int damage = 20;
 
