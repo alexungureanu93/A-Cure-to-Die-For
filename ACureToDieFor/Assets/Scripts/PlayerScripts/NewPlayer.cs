@@ -86,7 +86,7 @@ public class NewPlayer : PhysicsObject
         if (Health <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("LevelPrototype");
         }
     }
     private IEnumerator ActivateAttack()
