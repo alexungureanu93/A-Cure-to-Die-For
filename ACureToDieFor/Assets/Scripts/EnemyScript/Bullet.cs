@@ -30,5 +30,9 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject);
             NewPlayer.Instance.UpdateUI();
         }
+        else//If it hit any other object
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
