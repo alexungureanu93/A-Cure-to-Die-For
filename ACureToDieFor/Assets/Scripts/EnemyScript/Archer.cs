@@ -12,6 +12,8 @@ public class Archer : MonoBehaviour
     private bool canshootagain = true;
     public float archerRange = 10.00f;
     public float angleaccuracy = 30.00f;
+
+    
    
     
 
