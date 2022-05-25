@@ -1087,10 +1087,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 330082247}
-    - target: {fileID: 2703769006267151162, guid: dc7b7d6a24f14224eb46394fcc0b02eb, type: 3}
-      propertyPath: archerbase
-      value: 
-      objectReference: {fileID: 2133374853}
     - target: {fileID: 5049768318591319397, guid: dc7b7d6a24f14224eb46394fcc0b02eb, type: 3}
       propertyPath: m_Name
       value: Archer
@@ -1255,11 +1251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201105139676363882, guid: b9bc7fcd68603b746b5b28fbc39f2eca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.455963
+      value: -9.425425
       objectReference: {fileID: 0}
     - target: {fileID: 9201105139676363882, guid: b9bc7fcd68603b746b5b28fbc39f2eca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.26402
+      value: 10.263989
       objectReference: {fileID: 0}
     - target: {fileID: 9201105139685498508, guid: b9bc7fcd68603b746b5b28fbc39f2eca, type: 3}
       propertyPath: m_BoundingShape2D
@@ -1416,8 +1412,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2133374853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5049768318591319397, guid: dc7b7d6a24f14224eb46394fcc0b02eb, type: 3}
-  m_PrefabInstance: {fileID: 1879990293}
-  m_PrefabAsset: {fileID: 0}

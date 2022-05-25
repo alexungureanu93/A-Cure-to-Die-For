@@ -12,13 +12,25 @@ public class Archer : MonoBehaviour
     private bool canshootagain = true;
     public float archerRange = 10.00f;
     public float angleaccuracy = 30.00f;
+
+    private bool onright = false;
    
     
 
     // Update is called once per frame
     void LateUpdate()
     {
-            
+
+        if (target.transform.position.x < archerbase.transform.position.x)//Check if the player is on the left
+            Debug.Log("On left");
+        else//Check if the player is on the right
+        {
+            if(!onright)//If player is in right and has not updated than update rotation of y by 180
+            {
+                archerbase.transform.localEulerAngles = new Vector3(0, 180, 0);
+                onright = true;
+            }
+        }
 
 
 

@@ -18,14 +18,7 @@ public class CannonShoot : MonoBehaviour
     }
 
 
-    private void LateUpdate()
-    {
-      /*  if(Vector2.Distance(NewPlayer.Instance.transform.position,this.transform.position) <=killrange)
-        {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-                Destroy(this.gameObject);
-        }*/
-    }
+  
 
     void Shoot()
     {   
