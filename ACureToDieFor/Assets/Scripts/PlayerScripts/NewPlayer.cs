@@ -17,6 +17,7 @@ public class NewPlayer : PhysicsObject
     [SerializeField] private GameObject attackBox;
     [SerializeField] private int attackPower;
 
+
     public List<Sprite> playerForms = new List<Sprite>();
     public List<Sprite> inventoryItems = new List<Sprite>();
     public Image inventoryDisplayed;
@@ -86,7 +87,7 @@ public class NewPlayer : PhysicsObject
         if (Health <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("LevelPrototype");
+            SceneManager.LoadScene("Menu");
         }
     }
     private IEnumerator ActivateAttack()
