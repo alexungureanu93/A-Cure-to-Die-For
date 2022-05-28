@@ -17,6 +17,10 @@ public class EnemyHealth : MonoBehaviour
         if (Health <= 0)
             Die();
     }
+    public  void Damage(int damagevalue)
+    {
+        Health -= damagevalue;
+    }
 
     void Die()
     {
