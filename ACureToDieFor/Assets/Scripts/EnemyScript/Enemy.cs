@@ -10,7 +10,7 @@ public class Enemy : PhysicsObject
     [SerializeField] private Vector2 rayCastOffest;
     [SerializeField] private LayerMask rayCastLayerMask;
     [SerializeField] private int enemyCollisiondamage;
-    [SerializeField] private int health;
+    
     private int maxHealth = 100;
     private int direction=1;
     private RaycastHit2D rightLedgeRayCastHit;
@@ -19,7 +19,7 @@ public class Enemy : PhysicsObject
     private RaycastHit2D leftWallRayCastHit;
 
     public int EnemyCollisiondamage { get => enemyCollisiondamage; set => enemyCollisiondamage = value; }
-    public int Health { get => health; set => health = value; }
+    
 
     // Start is called before the first frame update
     void Start()
@@ -65,16 +65,10 @@ public class Enemy : PhysicsObject
 
         }
 
-        Die();
+       
     }
 
-    private void Die()
-    {
-        if (Health <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
+   
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
